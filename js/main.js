@@ -197,10 +197,10 @@
 	    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
 	    var mapOptions = {
 	        // How zoomed in you want the map to start at (always required)
-	        zoom: 11,
+	        zoom: 8,
 
 	        // The latitude and longitude to center the map (always required)
-	        center: new google.maps.LatLng(42.3732, 72.5199),
+	        center: new google.maps.LatLng({lat: 42.373222, lng: -72.519852}),
 
 	        scrollwheel: false,
 
@@ -239,7 +239,7 @@
 	    var image = 'images/map-marker.png';
 	    // Let's also add a marker while we're at it
 	    var marker = new google.maps.Marker({
-	        position: new google.maps.LatLng(42.391155, -72.526711),
+	        position: new google.maps.LatLng({lat: 42.373222, lng: -72.519852}),
 	        map: map,
 	        icon: image,
 	        draggable: true,
