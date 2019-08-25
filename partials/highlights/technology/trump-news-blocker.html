@@ -1,0 +1,53 @@
+<div id="blog-header" style="background: url(partials/highlights/technology/no-trump-zone.jpg); background-size: cover;">
+    <div class="overlay"></div>
+    <div class="single-post-title">
+        <h1>I made a Chrome extension to block all Trump-related news on Facebook.</h1>
+        <p class="post-info">
+            <span class="post-date">July 28, 2018</span>
+            <span class="slash"></span>
+            <span class="post-catetory">Technology</span>
+        </p>
+    </div>
+</div>
+<div class="block-content">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="single-post">
+                <div class="post">
+                    <div class="post-body">
+                        <p>
+							Like many millenials, I like wasting time mindlessly scrolling my Facebook news feed. It can serve as a treasure trove of information,
+							but one fine day all I could see was news about Donald Trump. Every second article was about him. It was a huge turn-off so I 
+							decided to make a Google Chrome extension to hide all items on the Facebook news feed mentioning Donald or Melania Trump.
+							
+							It took me a total of 2 hours to create it. It currently does a simple patterm match for keywords 'Trump', 'Melania' and 'POTUS' and then
+							hides the div elements entirely from the feed. 
+							
+							I am planning to make it intelligent in near future to pick up on recent news articles about Trump-related news. Since I'm not a Twitter user,
+							I didn't include option to remove it from Twitter feed but I am also planning to do so in near future. Another extension to eliminite
+							all Kardashian-Jenner news is in the works.
+							
+							You can check out the extension<a href="https://chrome.google.com/webstore/detail/trump-news-blocker/pemfdhccelkandanpclhnfoepnepblbg"> here.</a> 
+						</p>
+						
+                    </div>
+                    
+                </div>
+               </div>
+        </div>
+    </div>
+</div>
+<script>
+$('.open-post').on('click', function() {
+    var postUrl = $(this).attr("href");
+    $('.inline-menu-container').removeClass('showx');
+    $('.content-blocks.pop').addClass('showx');
+    $('.content-blocks.pop section').load(postUrl)
+    return false;
+});
+$('#close-post').on('click', function() {
+    $('.content-blocks.pop').removeClass('showx');
+    $('.inline-menu-container').addClass('showx');
+    $('.content-blocks.pop section').empty();
+});
+</script>

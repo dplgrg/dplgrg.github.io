@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Deepali Garg </title>
+    <meta name="description" content="Personal website of Deepali Garg, showcasing professional and personal highlights.">
+    <meta name="author" content="Deepali Garg" />
+	<meta name="keywords" content="Deepali,Garg,Deepali Garg,Personal">
+	<meta name="google-site-verification" content="Be3ixeXs8lwTA2gy-7U0_ZHpYh4MLu8z5rcvcHa5Puk" />
+    <link rel="icon" href="images/d_icon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+    <link rel="stylesheet" href="css/plugins.min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<script src="js/angular.js"></script>
+	<script src="js/app.js"></script>
+	
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120552769-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-120552769-1');
+		</script>
+
+	</head>
+
+<body ng-app="dgApp">
+
+	<div ng-controller="mainCtrl">
+    <div class="preloader">
+        <div class="anim pulse"><i class="ion-ios-bolt-outline"></i></div>
+    </div>
+    <div class="preloader-left"></div>
+    <div class="inline-menu-container">
+        <span class="status" style="font-size: small;">Looking for internship opportunities for Summer 2019.</span>
+        <ul class="inline-menu">
+            <li class="about menu-item">Resume</li>
+            <li class="portfolio menu-item">Highlights</li>
+            <li class="blog menu-item">Blog</li>
+            <li class="contact menu-item">About Me</li>
+            <li id="close" class="menu-item"><i class="ion-ios-close-empty"></i></li>
+        </ul>
+    </div>
+    <section class="home img-bg"  style="background: url(images/IMG_1654.jpg) 0 0; background-size: cover;">
+	<!-- style="background: url(images/IMG_1512.jpg) no-repeat center center fixed; background-size: 100% auto;"
+	-->
+        <div class="overlay opacity5"></div>
+        <div class="container">
+            <div class="name-block">
+                <div class="name-block-container">
+                    <h1><span>Hi, I'm</span> 
+					<audio id="namePronounce">
+					  <source src="files/deepali.mp3" type="audio/mpeg">
+					</audio>
+					<i class="fas fa-volume-up" style="font-size: 25px;vertical-align: middle;cursor: pointer;" ng-click="playPronounce()"></i> Deepali Garg </h1>
+                    <h2 id="element"></h2>
+                    <a target="_blank" href="files/resumeFull.pdf" class="btn btn-download">Download Resume</a>
+                    <ul class="social">
+					    <li><a href="https://www.linkedin.com/in/deepali-garg-780b3544/" target="_blank" ><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/deepali.garg93" target="_blank" ><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://www.quora.com/profile/Deepali-Garg" target="_blank" ><i class="fab fa-quora"></i></a></li>
+                        <li><a href="https://medium.com/@deepaligarg" target="_blank" ><i class="fab fa-medium"></i></a></li>
+                        <li><a href="https://instagram.com/_deepaligarg_" target="_blank" ><i class="ion-social-instagram"></i></a></li>
+                        <li><a href="mailto:dgarg@umass.edu" target="_blank" ><i class="fa fa-envelope"></i></a></li>
+                      
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-blocks">
+                <div class="about-block menu-block">
+                    <div class="about-block-container">
+                        <h2 class="about menu-item">Resume</h2>
+                    </div>
+                </div>
+                <div class="portfolio-block  menu-block">
+                    <div class="portfolio-block-container">
+                        <h2 class="portfolio menu-item">Highlights</h2>
+                    </div>
+                </div>
+                <div class="blog-block  menu-block">
+                    <div class="blog-block-container">
+                        <h2 class="blog menu-item">Blog</h2>
+                    </div>
+                </div>
+                <div class="contact-block  menu-block">
+                    <div class="contact-block-container">
+                        <h2 class="contact menu-item">About me</h2>
+                    </div>
+                </div>
+            </div>
+		   
+		    <div class="content-blocks about">
+                
+				<section class="content" id="about">
+				 <div ng-include="'partials/resume.html'"></div>
+				</section>
+            </div>
+            
+		   
+		   <div class="content-blocks portfolio">
+                <section class="content">
+                    <div ng-include="'partials/portfolio.html'"></div>
+                </section>
+            </div>
+            <div class="content-blocks blog">
+                <section class="content">
+                    <div ng-include="'partials/blog.html'"></div>
+                </section>
+            </div>
+			
+            <div class="content-blocks contact">
+                <section class="content">
+					<div ng-include="'partials/contact.html'"></div>
+                </section>
+            </div>
+            <div class="content-blocks pop">
+                <div id="close-pop" class="close-pop">Close <i class="ion-ios-close-empty"></i></div>
+                <section class="content"></section>
+            </div>
+        </div>
+    </section>
+	
+	
+	</div>
+    <script src="js/plugins.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmsb2nGLuIl04bt7CWJozRMhThvGa3y1w"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

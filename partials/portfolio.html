@@ -1,0 +1,111 @@
+<div class="block-content">
+					<h3 class="block-title">Highlights</h3>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="filters">
+								<span>Filters :</span>
+								<ul id="filters">
+									<li class="active" data-filter="*">All</li>
+									<li data-filter=".ai">Artificial Intelligence</li>
+									<li data-filter=".prep">Guide to Grad School</li>
+									<li data-filter=".tech">Technology</li>
+								</ul>
+							</div>
+							<div class="portfolio-container row isotope" id="portfolio-container">
+								<!-- WORK 4 START 
+								<div class="col-md-6 col-sm-6 col-xs-12 portfolio-item prep">
+									<a class="open-project" href="project-4.html">
+										<div class="portfolio-column">
+											<div class="portfolio-hover">
+												<div class="portfolio-content">
+													<h2>STATIONARY</h2>
+													<hr>
+													<p>View details.</p>
+												</div>
+												<div class="portfolio-overlay"></div>
+											</div>
+											<img src="images/portfolio/masonry/004.jpg" alt="">
+										</div>
+									</a>
+								</div>
+								 WORK 4 END -->
+									<!--
+									<div class="col-md-6 col-sm-6 col-xs-12 portfolio-item post ai">
+										<div class="post-thumbnail">
+											<a class="open-post" href="post-single.html">
+												<img src="images/blog/midium/4.jpg" alt="">
+											</a>
+										</div>
+										<div class="post-title">
+											<a class="open-post" href="post-single.html"><h2>Typography for web</h2>
+											
+												<div class="portfolio-column">
+													<div class="portfolio-hover">
+														<div class="portfolio-content">
+															<h2>STATIONARY</h2>
+															<hr>
+															<p>View details.</p>
+														</div>
+														<div class="portfolio-overlay"></div>
+													</div>
+													<img src="images/portfolio/masonry/004.jpg" alt="">
+												</div>
+											
+											
+											</a>
+											<p class="post-info">
+												<span class="post-author">Posted by John Sparrow</span>
+												<span class="slash"></span>
+												<span class="post-date">Dec 08, 2017</span>
+												<span class="slash"></span>
+												<span class="post-catetory">Food</span>
+											</p>
+										</div>
+										<div class="post-body">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur. Aliquam erat volutpat. Nunc eu nibh nulla, id cursus arcu. </p>
+											<a class="btn open-post" href="post-single.html">Read More</a>
+										</div>
+									</div>
+									-->
+									
+									
+									<div class="col-md-6 col-sm-6 col-xs-12 portfolio-item post" ng-show="true" ng-repeat="item in portfolioItems" ng-class="item.class">
+											
+											<div class="post-title">
+												<a class="open-post" ng-click="openPopSection(item.url)"><h2>{{item.postTitle}}</h2>
+												
+													<div class="portfolio-column">
+														<div class="portfolio-hover">
+															<div class="portfolio-content">
+																<h2>{{item.hoverContentTitle}}</h2>
+																<hr>
+																<p>View details.</p>
+															</div>
+															<div class="portfolio-overlay"></div>
+														</div>
+														<img ng-src="{{item.img_src}}" alt="">
+													</div>
+												
+												
+												</a>
+												<p class="post-info">
+													<span class="post-author">{{item.postAuthor}}</span>
+													<span class="slash"></span>
+													<span class="post-date">{{item.postDate}}</span>
+													<span class="slash"></span>
+													<span class="post-catetory">{{item.postCategory}}</span>
+												</p>
+											</div>
+											<div class="post-body">
+												<p>{{item.postBody}}</p>
+												<a class="btn open-post" ng-click="openPopSection(item.url)">Read More</a>
+											</div>
+							</div>
+							
+							</div>
+						
+							
+						</div>
+					</div>
+				</div>
+			  

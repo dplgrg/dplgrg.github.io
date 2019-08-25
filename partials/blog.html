@@ -1,0 +1,132 @@
+<div class="block-content">
+					<h3 class="block-title">Blog (Coming Soon)</h3>
+					
+					<div class="row">
+					  <div class="col-md-12">
+							<div class="filters">
+								<span>Filters :</span>
+								<ul class="filters">
+									<li class="active" data-filter="*">All</li>
+									<li data-filter=".travel">Travel</li>
+									<li data-filter=".read">Read</li>
+									<li data-filter=".language">Languages</li>
+									<li data-filter=".trends">Trends</li>
+									
+								</ul>
+							</div>
+							<div class="portfolio-container row isotope" ng-show="false">
+								<!-- WORK 1 START -->
+								<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item travel" ng-repeat="item in blogItems.travel">
+									<a class="open-project" ng-click="openPopSection(item.url)">
+										<div class="portfolio-column">
+											<div class="portfolio-hover">
+												<div class="portfolio-content">
+													<h2>{{item.hoverContentTitle}}</h2>
+													<hr>
+													<p>View details.</p>
+												</div>
+												<div class="portfolio-overlay"></div>
+											</div>
+											<img src="{{item.img_src}}" alt="">
+										</div>
+									</a>
+								</div>
+								
+								<div class="col-md-12 mx-auto allPosts"> 
+									
+									<div class="post portfolio-item col-md-12 read" ng-repeat="item in blogItems.read" style="margin:0">
+								
+										<div class="post-title">
+											<a class="open-post"  ng-click="openPopSection(item.url)"><h2>{{item.postTitle}}</h2></a>
+											<p class="post-info" style="margin: 0;">
+												<span class="post-date">{{item.postDate}}</span>
+												<span class="slash"></span>
+												<span class="post-catetory">{{item.postCategory}}</span>
+											</p>
+										</div>
+										<div class="post-body" style="padding:0">
+											<p>{{item.postBody}}</p>
+											<a class="btn open-post" ng-if="item.url!=undefined" ng-click="openPopSection(item.url)" style="margin:0">Read More</a>
+										</div>
+							        </div>
+						
+									<div class="post portfolio-item col-md-12 language" ng-repeat="item in blogItems.language" style="margin:0">
+										
+										<div class="post-title">
+											<a class="open-post" ng-click="openPopSection(item.url)"><h2>{{item.postTitle}}</h2></a>
+											<p class="post-info" style="margin: 0;">
+												<span class="post-date">{{item.postDate}}</span>
+												<span class="slash"></span>
+												<span class="post-catetory">{{item.postCategory}}</span>
+											</p>
+										</div>
+										<div class="post-body" style="padding:0">
+											<p>{{item.postBody}}</p>
+											<a class="btn open-post" ng-if="item.url!=undefined"  ng-click="openPopSection(item.url)" style="margin:0">Read More</a>
+										</div>
+									</div>
+									
+									<div class="post portfolio-item col-md-12 trends" ng-repeat="item in blogItems.trends" style="margin:0">
+										
+										<div class="post-title">
+											<a class="open-post" ng-click="openPopSection(item.url)"><h2>{{item.postTitle}}</h2></a>
+											<p class="post-info" style="margin: 0;">
+												<span class="post-date">{{item.postDate}}</span>
+												<span class="slash"></span>
+												<span class="post-catetory">{{item.postCategory}}</span>
+											</p>
+										</div>
+										<div class="post-body" style="padding:0">
+											<p>{{item.postBody}}</p>
+											<a class="btn open-post" ng-if="item.url!=undefined" ng-click="openPopSection(item.url)" style="margin:0">Read More</a>
+										</div>
+									</div>
+									
+						        </div>
+					
+							</div>
+						
+					  </div>
+					</div>
+</div>
+				
+				
+				<!--<div class="post">
+								<div class="post-thumbnail">
+									<a class="open-post" href="post-single.html">
+										<img src="images/blog/midium/3.jpg" alt="">
+									</a>
+								</div>
+								<div class="post-title">
+									<a class="open-post" href="post-single.html"><h2>Typography for web</h2></a>
+									<p class="post-info">
+										<span class="post-author">Posted by John Sparrow</span>
+										<span class="slash"></span>
+										<span class="post-date">Dec 08, 2017</span>
+										<span class="slash"></span>
+										<span class="post-catetory">Food</span>
+									</p>
+								</div>
+								<div class="post-body">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur. Aliquam erat volutpat. Nunc eu nibh nulla, id cursus arcu. </p>
+									<a class="btn open-post" href="post-single.html">Read More</a>
+								</div>
+							</div>
+							
+							<div class="text-center">
+								<ul class="pagination">
+									<li class="page-item disabled">
+									  <a class="page-link" href="#" tabindex="-1">Previous</a>
+									</li>
+									<li class="page-item"><a class="page-link" href="#">1</a></li>
+									<li class="page-item active">
+									  <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+									</li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item"><a class="page-link" href="#">4</a></li>
+									<li class="page-item">
+									  <a class="page-link" href="#">Next</a>
+									</li>
+								</ul>
+							</div>-->
+						

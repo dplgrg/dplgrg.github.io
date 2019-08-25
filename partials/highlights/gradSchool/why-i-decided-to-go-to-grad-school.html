@@ -1,0 +1,71 @@
+<div id="blog-header" style="background: url(partials/highlights/gradSchool/masters-degree-in-education.png); background-size: cover;">
+    <div class="overlay"></div>
+    <div class="single-post-title">
+        <h1>Why I decided to go to graduate school</h1>
+        <p class="post-info">
+            <span class="post-date">June 11, 2018</span>
+            <span class="slash"></span>
+            <span class="post-catetory">Graduate School</span>
+        </p>
+    </div>
+</div>
+<div class="block-content">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="single-post">
+                <div class="post">
+                    <div class="post-body">
+                        <p>
+						
+							Back in the winter of 2016, I decided I didn't want to stick to the status quo. I'd landed my dream job, but something was amiss.
+							I soon realized that despite having an undergraduate degree from a top institution in India, something was wanting in my education
+							and I felt the need to upgrade my skills.
+						</p>
+						<p>	
+							There was a lot of talk about Artificial Intelligence and Machine Learning around me, but it turns out that most of it was
+							just chatter. I finished Andrew Ng's course but felt the need to get a more comprehensive and hands-on course. I looked up
+							online about Machine Learning and Data Science and came to the conclusion that a Master's degree from US would equip me with the best
+							possible abilites to excel in this field. There is a sharp learning curve involved in educating oneself in Data science and Machine learning
+							and the challenge thus presented enticed me to getting a graduate education.
+						</p>
+						
+						<p>						
+							In India, a lot of startups are focusing on great work in the field of Machine Learning as there is a lot of potential for growth owing to
+							the copious amount of data produced by the ever-increasing population. There is a dearth of qualified Data scientists in India. A degree from
+							a great institute from US in this field would give anyone an advantage in the high-paying industry of Data science in India.	
+						</p>
+						
+							Thus I decided to go for a Masters degree to learn one of the most complex disciplines in the field of Computer Science
+							and also to give a boost to my future career prospects in India.
+						</p>
+                        <p></p>
+                        
+                    </div>
+                    <!--
+                    <ul id="blog-social">
+                        <li>Share this : </li>
+                        <li><a href="#"><i class="ion-social-facebook"></i></a> </li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a> </li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a> </li>
+                        <li><a href="#"><i class="ion-social-pinterest"></i></a> </li>
+                    </ul>
+                   -->
+                </div>
+               </div>
+        </div>
+    </div>
+</div>
+<script>
+$('.open-post').on('click', function() {
+    var postUrl = $(this).attr("href");
+    $('.inline-menu-container').removeClass('showx');
+    $('.content-blocks.pop').addClass('showx');
+    $('.content-blocks.pop section').load(postUrl)
+    return false;
+});
+$('#close-post').on('click', function() {
+    $('.content-blocks.pop').removeClass('showx');
+    $('.inline-menu-container').addClass('showx');
+    $('.content-blocks.pop section').empty();
+});
+</script>
