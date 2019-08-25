@@ -64,7 +64,7 @@
 	    });
 
 	});
-	
+
 	$('.blog-block, .menu-item').on('click', function() {
 
 	    //Portfolio masonry
@@ -86,7 +86,7 @@
 
 	// Typing Animation (Typed.js)
 	$('#element').typed({
-	    strings: ["Software Developer", "Aspiring AI Engineer","Writer"],
+	    strings: ["Software Developer", "Graduate Student @ UMass Amherst", "Aspiring ML Engineer","Writer"],
 	    typeSpeed: 0,
 	    loop: true,
 	    startDelay: 500,
@@ -179,7 +179,7 @@
 
 	$('.menu-block, .menu-item, #close').on('click', function() {
 	    $('.content-blocks').animate({ scrollTop: 0 }, 800);
-	});	
+	});
 
 	//Function for 'Index-Menu2.html'
 	$('#home').on('click', function() {
@@ -200,7 +200,7 @@
 	        zoom: 11,
 
 	        // The latitude and longitude to center the map (always required)
-	        center: new google.maps.LatLng(42.391155, -72.526711), 
+	        center: new google.maps.LatLng(42.3732, 72.5199),
 
 	        scrollwheel: false,
 
