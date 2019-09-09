@@ -1,0 +1,56 @@
+<div id="blog-header" style="background: url(partials/highlights/gradSchool/aws-image.jpg); background-size: cover;">
+    <div class="overlay"></div>
+    <div class="single-post-title">
+        <h1>Cracking the internship search</h1>
+        <p class="post-info">
+            <span class="post-date">September 6, 2019</span>
+            <span class="slash"></span>
+            <span class="post-catetory">Graduate School</span>
+        </p>
+    </div>
+</div>
+<div class="block-content">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="single-post">
+                <div class="post">
+                    <div class="post-body">
+                        <p>
+
+            							Last year around this time I found myself exploring the bucolic life of rural New England as I began my Masters in
+                          Computer Science degree at the University of Massachusetts Amherst. My first year in grad school was a hell of ride.
+                          I got to explore entirely new domains, got adjusted to the American way of life, and got the lucky chance to explore
+                          some of the best things US had to offer (New York City, I'm looking at you).
+
+						            </p>
+
+                        <p>
+                          But this joyride came with its fair share of stress as along with many other students I was hunting for internships.
+                          I interviewed with 10 companies in total, was ghosted by 8 of them and got rejected by Facebook. Needless to say,
+                          the pressure was high. February rolled in with good news as I got into one of my dream tech companies to work for -
+                          Amazon. I had a great time in Seattle, and I'll be talking about it in my next blog post.
+                        </p>
+
+                        <p></p>
+
+                    </div>
+
+                </div>
+               </div>
+        </div>
+    </div>
+</div>
+<script>
+$('.open-post').on('click', function() {
+    var postUrl = $(this).attr("href");
+    $('.inline-menu-container').removeClass('showx');
+    $('.content-blocks.pop').addClass('showx');
+    $('.content-blocks.pop section').load(postUrl)
+    return false;
+});
+$('#close-post').on('click', function() {
+    $('.content-blocks.pop').removeClass('showx');
+    $('.inline-menu-container').addClass('showx');
+    $('.content-blocks.pop section').empty();
+});
+</script>

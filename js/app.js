@@ -1,33 +1,33 @@
 var app=angular.module("dgApp",[]);
 
 app.controller("mainCtrl",function($scope){
-	
+
 	$scope.playPronounce=function(){
 		var x=document.getElementById("namePronounce");
 		x.play();
 	};
-	
+
 	$scope.openPopSection=function(url){
-		
+
 		$('.inline-menu-container').removeClass('showx');
 	    $('.sidebar-menu').addClass('hidex');
 	    $('.content-blocks.pop').addClass('showx');
 	    $('.content-blocks.pop section').load(url);
-	 	
+
 	}
-	
+
 	$scope.portfolioItems=[
-		/*{
-			"class":"ai",
-			"url":"post-single.html",
-			"img_src":"images/portfolio/masonry/004.jpg",
-			"postTitle":"AI Part 1",
-			"hoverContentTitle":"Part 1",
-			"postAuthor":"Deepali Garg",
-			"postDate":"Jun 10,2018",
-			"postCategory":"AI",
-			"postBody":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-		},*/
+		// {
+		// 	"class":"prep",
+		// 	"url":"partials/highlights/gradSchool/internship-search.html",
+		// 	"img_src":"partials/highlights/gradSchool/aws-image.jpg",
+		// 	"postTitle":"Cracking the internship search",
+		// 	"hoverContentTitle":"Cracking the internship search",
+		// 	"postAuthor":"Deepali Garg",
+		// 	"postDate":"Jul 26,2018",
+		// 	"postCategory":"Graduate School",
+		// 	"postBody":"Things I learned after applying to 200+ companies and landing my dream internship at Amazon"
+		// },
 		{
 			"class":"prep",
 			"url":"partials/highlights/gradSchool/why-i-decided-to-go-to-grad-school.html",
@@ -61,12 +61,12 @@ app.controller("mainCtrl",function($scope){
 			"postCategory":"Technology",
 			"postBody":"Like many millenials, I like wasting time mindlessly scrolling my Facebook news feed."
 		},
-	
+
 	]
-	
-	
+
+
 	$scope.blogItems={
-		
+
 		"travel":[
 			{
 				"class":"travel",
@@ -104,9 +104,9 @@ app.controller("mainCtrl",function($scope){
 				"img_src":"images/portfolio/masonry/004.jpg",
 				"hoverContentTitle":"Part 1"
 			}
-		
+
 		],
-		
+
 		"read":[
 			{
 				"class":"read",
@@ -128,7 +128,7 @@ app.controller("mainCtrl",function($scope){
 				"postCategory":"Read",
 				"postBody":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 			}
-		
+
 		],
 		"language":[{
 				"class":"language",
@@ -171,12 +171,11 @@ app.controller("mainCtrl",function($scope){
 				"postCategory":"Trends",
 				"postBody":"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 			}
-		
-		]
-		
-		
-	};
-	
-	
-});
 
+		]
+
+
+	};
+
+
+});
